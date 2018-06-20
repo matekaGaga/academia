@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charser="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body
+            {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">EtManager</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Acceuil</a></li>
+                            <li><a href="#" onclick="studAddForm();">Ajouter un etudiant</a></li>
+                            <li><a href="#" onclick="facAddForm();">Ajouter une faculte</a></li>
+                        </ul>
+                        <a id="logout-button" class="btn btn-primary pull-right" href="#">Deconnexion <i class="icon-off icon-white"></i></a>
+                        <p id="username-label" class="navbar-text pull-right lead"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span7 offset2 main-content">
+                    <!--Body content-->
+                    <form id="new-entity" class="form-horizontal">
+                        <fieldset>
+                            <legend id="operation_title" class="text-center">Choisir une action</legend>
+                            <div id="operation_controls" class="control-group">
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="span3">
+                    <div class="accordion" id="accordion-side">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-side" href="#collapse-org">
+                                    Etudiants<i id="org-id-new" class="icon-plus pull-right"></i>
+                                </a>
+                            </div>
+                            <div id="collapse-org" class="accordion-body collapse in">
+                                <div id="organization_list" class="accordion-inner data-list">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-side" href="#collapse-drv">
+                                    Students <i id="drv-id-new" class="icon-plus pull-right"></i>
+                                </a>
+                            </div>
+                            <div id="collapse-drv" class="accordion-body collapse">
+                                <div id="students_list" class="accordion-inner data-list">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+         <!-- Modal dialog -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Close</button>
+            <h3>Confirmation</h3>
+          </div>
+          <div class="modal-body">
+            <p>Sure</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Non</button>
+            <button class="btn btn-primary" id="yes_button">Oui</button>
+          </div>
+        </div>
+         
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>');</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

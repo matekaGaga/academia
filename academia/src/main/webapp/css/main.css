@@ -1,0 +1,33 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.data-list div:hover a
+{
+    display: block
+}
+.data-list div:hover
+{
+    background-color: #c4e3f3
+}
+.data-list a
+{
+    display: none
+}
+.data-list div
+{
+    cursor: pointer;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.main-content
+{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
