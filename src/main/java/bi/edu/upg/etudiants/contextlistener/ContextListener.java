@@ -1,9 +1,5 @@
 package bi.edu.upg.etudiants.contextlistener;
 
-import bi.edu.upg.etudiants.db.ConnectionFactory;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
